@@ -13,7 +13,7 @@ from rest_framework.response import Response
 from rest_framework_jwt.utils import jwt_decode_handler
 
 from api import models
-from .serializers import SiteSerializer
+from .form import SiteSerializer
 from api.utils.jwt_auth import create_token
 
 

@@ -21,7 +21,12 @@ class ShareAdd(APIView):
         if content:
             c_time = timezone.now() + timedelta(hours=8)
             last_id = models.InfoShares.objects.order_by("-id")[0].id
-            models.InfoShares.objects.filter(id=last_id).update(shareName=name, contents=content, cTime=c_time)
+            # 判断表中是否有数据
+            if last_id:
+                models.InfoShares.objects.filter(id=last_id).update(shareName=name, contents=content, cTime=c_time)
+            # 没有数据直接写入
+            else:
+                models.InfoShares.objects.create(shareName=name, contents=content, cTime=c_time)
             return Response({
                 "state": True,
                 "status": 1,

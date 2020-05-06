@@ -56,4 +56,7 @@ urlpatterns = [
                   url(r'^share/upload$', share.ShareUpload.as_view(), name='share_upload'),
                   # 测试接口
                   url(r'^test$', test.Test.as_view(), name='test'),
+                  # 大屏图表展示ajax
+                  url(r'^echarts$', water.echarts_data, name='echarts'),
+
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

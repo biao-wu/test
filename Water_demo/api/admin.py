@@ -2,7 +2,7 @@ from django.contrib import admin
 from api.models import UserInfo
 from api.models import Dev
 from api.models import InfoShares
-from api.models import WaterSite
+from api.models import WaterData
 from api.models import Log
 
 
@@ -25,7 +25,7 @@ class LogAdmin(admin.ModelAdmin):
 
 
 class WaterAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'siteName', 'PH', 'NTU', 'oxygen', 'tem', 'ele', 'chlorine', 'site', 'cTime')
+    list_display = ('pk', 'pH', 'NTU', 'oxygen', 'tem', 'ele', 'chlorine', 'site', 'time')
     ordering = ['pk', ]
 
 
@@ -41,4 +41,4 @@ admin.site.register(UserInfo, UserAdmin)
 admin.site.register(Dev, DevAdmin)
 admin.site.register(InfoShares, ShareAdmin)
 admin.site.register(Log, LogAdmin)
-admin.site.register(WaterSite, WaterAdmin)
+admin.site.register(WaterData, WaterAdmin)
