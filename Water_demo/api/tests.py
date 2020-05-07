@@ -28,19 +28,16 @@ print(myaddr)
 #
 # print(d)
 
-# from django.utils import timezone
-# import datetime
-# import pytz
+# from datetime import datetime
 #
-# now = timezone.now()
-# print(now)
-# new = timezone.localtime(now)
-# print(new)
+# now = datetime.now()
+# print(now.strftime("%Y/%m/%d %H:%M:%S"))
+
 import json
 import re
 
-s1 = "['1230000', ' 4560000']"
-l1 = [1230000, 4560000]
+# s1 = "['1230000', ' 4560000']"
+# l1 = [1230000, 4560000]
 
 # s2 = str(s1.split(","))
 # print(s2)
@@ -48,13 +45,10 @@ l1 = [1230000, 4560000]
 # num = re.sub(r'\D', "", s1)
 # print(num)
 
-s1 = s1.replace("'",'"')
-
-print([int(item) for item in json.loads(s1)])
+# s1 = s1.replace("'",'"')
+#
+# print([int(item) for item in json.loads(s1)])
 # print(print([int(item.strip()) for item in json.loads(s1)]))
-
-
-
 
 
 '''

@@ -24,7 +24,7 @@ class AdminLogs(APIView):
                 res["_id"] = i.id
                 res["admin"] = i.admin
                 res["opa"] = i.opa
-                res["cTime"] = i.cTime
+                res["cTime"] = i.cTime.strftime("%Y/%m/%d %H:%M:%S")
                 res["__v"] = 0
                 data.append(res)
             return Response({
@@ -43,7 +43,7 @@ class AdminLogs(APIView):
             res["_id"] = i.id
             res["admin"] = i.admin
             res["opa"] = i.opa
-            res["cTime"] = i.cTime
+            res["cTime"] = i.cTime.strftime("%Y/%m/%d %H:%M:%S")
             res["__v"] = 0
             data.append(res)
         return Response({
@@ -73,7 +73,7 @@ class AdminLogsAll(APIView):
             res["_id"] = i.id
             res["admin"] = i.admin
             res["opa"] = i.opa
-            res["cTime"] = i.cTime
+            res["cTime"] = i.cTime.strftime("%Y/%m/%d %H:%M:%S")
             res["__v"] = 0
             data.append(res)
         return Response({

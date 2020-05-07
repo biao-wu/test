@@ -8,7 +8,7 @@ class SiteForm(forms.Form):
         (0, "离线")
     )
     siteName = forms.CharField(max_length=32, label='站点名称')
-    PH = forms.CharField(max_length=32, label='PH值')
+    pH = forms.CharField(max_length=32, label='PH值')
     NTU = forms.CharField(max_length=32, label='浑浊度')
     oxygen = forms.CharField(max_length=32, label='溶解氧')
     tem = forms.CharField(max_length=32, label='水温')

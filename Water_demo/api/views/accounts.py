@@ -92,8 +92,8 @@ class LoginView(APIView):
                 now_name = socket.getfqdn(socket.gethostname())
                 now_ip = socket.gethostbyname(now_name)
                 models.Log.objects.create(username=name,
-                                          lastLoginTime="1970-01-01 08:00",
-                                          lastLoginIp="127.0.0.1",
+                                          lastLoginTime="",
+                                          lastLoginIp="",
                                           nowLoginTime=create_time,
                                           nowLoginIp=now_ip)
             return Response({

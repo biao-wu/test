@@ -22,8 +22,8 @@ class GetLogs(APIView):
             data = []
             for i in queryset:
                 last_login_ip = i.lastLoginIp
-                last_login_time = i.lastLoginTime
-                now_login_time = i.nowLoginTime
+                last_login_time = i.lastLoginTime.strftime("%Y/%m/%d %H:%M:%S")
+                now_login_time = i.nowLoginTime.strftime("%Y/%m/%d %H:%M:%S")
                 now_login_ip = i.nowLoginIp
                 # 通过UserInfo表查询id构建对应的数据结构
                 user = models.UserInfo.objects.filter(username=name)
@@ -62,16 +62,16 @@ class GetLogsAll(APIView):
     """
 
     def get(self, request):
-        # page = request.GET.get("page", 1)
+        page = request.GET.get("page", 1)
         logs = models.Log.objects.all()
-        # news = Paginator(logs, 10)
-        # queryset = news.page(page)
+        news = Paginator(logs, 10)
+        queryset = news.page(page)
         data = []
-        for i in logs:
+        for i in queryset:
             name = i.username
             last_login_ip = i.lastLoginIp
-            last_login_time = i.lastLoginTime
-            now_login_time = i.nowLoginTime
+            last_login_time = i.lastLoginTime.strftime("%Y/%m/%d %H:%M:%S")
+            now_login_time = i.nowLoginTime.strftime("%Y/%m/%d %H:%M:%S")
             now_login_ip = i.nowLoginIp
             user = models.UserInfo.objects.filter(username=name)
             for j in user:

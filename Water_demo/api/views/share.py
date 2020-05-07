@@ -49,7 +49,7 @@ class ShareUpload(APIView):
         models.InfoShares.objects.create(imgSrc=file_obj)
         return Response({
             "status": 0,
-            "path": "/media/img" + file_obj.name
+            "path": "media/img/" + file_obj.name
         })
 
 
@@ -71,7 +71,7 @@ class ShareContentPage(APIView):
                 res["_id"] = i.id
                 res["shareName"] = i.shareName
                 res["contents"] = i.contents
-                res["cTime"] = "" if i.cTime is None else i.cTime
+                res["cTime"] = "" if i.cTime is None else i.cTime.strftime("%Y/%m/%d %H:%M:%S")
                 res["imgSrc"] = "" if i.imgSrc is None else str(i.imgSrc)
                 res["__v"] = 0
                 data.append(res)
@@ -88,7 +88,7 @@ class ShareContentPage(APIView):
             res["_id"] = i.id
             res["shareName"] = i.shareName
             res["contents"] = i.contents
-            res["cTime"] = "" if i.cTime is None else i.cTime
+            res["cTime"] = "" if i.cTime is None else i.cTime.strftime("%Y/%m/%d %H:%M:%S")
             res["imgSrc"] = "" if i.imgSrc is None else str(i.imgSrc)
             res["__v"] = 0
             data.append(res)
@@ -115,7 +115,7 @@ class ShareContentAll(APIView):
                 res["_id"] = i.id
                 res["shareName"] = i.shareName
                 res["contents"] = i.contents
-                res["cTime"] = "" if i.cTime is None else i.cTime
+                res["cTime"] = "" if i.cTime is None else i.cTime.strftime("%Y/%m/%d %H:%M:%S")
                 res["imgSrc"] = "" if i.imgSrc is None else str(i.imgSrc)
                 res["__v"] = 0
                 data.append(res)
@@ -132,7 +132,7 @@ class ShareContentAll(APIView):
             res["_id"] = i.id
             res["shareName"] = i.shareName
             res["contents"] = i.contents
-            res["cTime"] = "" if i.cTime is None else i.cTime
+            res["cTime"] = "" if i.cTime is None else i.cTime.strftime("%Y/%m/%d %H:%M:%S")
             res["imgSrc"] = "" if i.imgSrc is None else str(i.imgSrc)
             res["__v"] = 0
             data.append(res)

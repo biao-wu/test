@@ -137,3 +137,4 @@ class Aliyun(APIView):
 def water_test(request):
     if request.method == "GET":
         return render(request, "test.html")
+

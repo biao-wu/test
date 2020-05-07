@@ -138,23 +138,24 @@ class DevFind(APIView):
                         res["_id"] = i.id
                         res["devName"] = i.devName
                         res["devNum"] = i.devNum
-                        res["devDate"] = i.devDate
+                        res["devDate"] = i.devDate.strftime("%Y/%m/%d %H:%M:%S")
                         res["devSIM"] = i.devSIM
                         res["devUse"] = i.devUse
                         res["devAdmin"] = i.devAdmin
-                        res["cTime"] = i.cTime
+                        res["cTime"] = i.cTime.strftime("%Y/%m/%d %H:%M:%S")
                         res["__v"] = 0
                     find_result.append(res)
-                    return Response({
-                        "state": True,
-                        "status": 1,
-                        "findResult": find_result
-                    })
-                return Response({
-                    "state": True,
-                    "status": 1,
-                    "findResult": []
-                })
+                    if find_result:
+                        return Response({
+                            "state": True,
+                            "status": 1,
+                            "findResult": find_result
+                        })
+                # return Response({
+                #     "state": True,
+                #     "status": 1,
+                #     "findResult": []
+                # })
             return Response({
                 "state": False,
                 "status": 0,
@@ -162,9 +163,12 @@ class DevFind(APIView):
             })
         else:
             query = models.Dev.objects.all()
+            page = request.data.get("page", 1)
+            count = Paginator(query, 5)
+            queryset = count.page(page)
             find_result = []
 
-            for i in query:
+            for i in queryset:
                 res = {}
                 s1 = i.devLocation.replace("'", '"')
                 dev_location = [float(item) for item in json.loads(s1)]
@@ -172,18 +176,24 @@ class DevFind(APIView):
                 res["_id"] = i.id
                 res["devName"] = i.devName
                 res["devNum"] = i.devNum
-                res["devDate"] = i.devDate
+                res["devDate"] = i.devDate.strftime("%Y/%m/%d %H:%M:%S")
                 res["devSIM"] = i.devSIM
                 res["devUse"] = i.devUse
                 res["devAdmin"] = i.devAdmin
-                res["cTime"] = i.cTime
+                res["cTime"] = i.cTime.strftime("%Y/%m/%d %H:%M:%S")
                 res["__v"] = 0
 
                 find_result.append(res)
+            if find_result:
+                return Response({
+                    "state": True,
+                    "status": 1,
+                    "findResult": find_result
+                })
             return Response({
-                "state": True,
-                "status": 1,
-                "findResult": find_result
+                "state": False,
+                "status": 0,
+                "msg": "查询失败"
             })
 
 
@@ -207,18 +217,24 @@ class DevFindAll(APIView):
             res["_id"] = i.id
             res["devName"] = i.devName
             res["devNum"] = i.devNum
-            res["devDate"] = i.devDate
+            res["devDate"] = i.devDate.strftime("%Y/%m/%d %H:%M:%S")
             res["devSIM"] = i.devSIM
             res["devUse"] = i.devUse
             res["devAdmin"] = i.devAdmin
-            res["cTime"] = i.cTime
+            res["cTime"] = i.cTime.strftime("%Y/%m/%d %H:%M:%S")
             res["__v"] = 0
 
             find_result.append(res)
+        if find_result:
+            return Response({
+                "state": True,
+                "status": 1,
+                "findResult": find_result
+            })
         return Response({
-            "state": True,
-            "status": 1,
-            "findResult": find_result
+            "state": False,
+            "status": 0,
+            "msg": "查询失败"
         })
 
 
