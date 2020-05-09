@@ -60,12 +60,12 @@ class AddDev(APIView):
             return Response({
                 "state": False,
                 "status": 0,
-                "msg": "查询失败"
+                "msg": "设备添加失败"
             })
         return Response({
             "state": False,
             "status": 0,
-            "msg": "devName||devDate||devNum必填"
+            "msg": "查询失败"
         })
 
 
@@ -81,7 +81,6 @@ class UpdateDev(APIView):
             dev_sim = i.devSIM
             dev_use = str(i.devUse)
             dev_location = i.devLocation
-            print(dev_location)
             dev_admin = i.devAdmin
             if request.data.get("devSIM") == dev_sim and \
                     request.data.get("devUse") == dev_use and \
@@ -93,7 +92,6 @@ class UpdateDev(APIView):
                     "msg": "设备信息一致,更新失败"
                 })
             # 更新信息到数据库
-            print(request.data)
             models.Dev.objects.filter(devNum=dev_num).update(**request.data)
             # 添加日志到数据库
             l_admin = get_name(request)
@@ -124,12 +122,13 @@ class DevFind(APIView):
         if receive_data:
             dev_num = receive_data.get("devNum")
             if dev_num:
-                page = request.GET.get("page", 1)
+                find_result = []
+                page = request.data.get("page", 1)
+                count = request.data.get("count", 5)
                 dev_obj = models.Dev.objects.filter(devNum=dev_num)
-                news = Paginator(dev_obj, 5)
+                news = Paginator(dev_obj, count)
                 queryset = news.page(page)
                 if queryset:
-                    find_result = []
                     res = {}
                     for i in queryset:
                         s1 = i.devLocation.replace("'", '"')
@@ -151,6 +150,7 @@ class DevFind(APIView):
                             "status": 1,
                             "findResult": find_result
                         })
+
                 # return Response({
                 #     "state": True,
                 #     "status": 1,
@@ -163,11 +163,10 @@ class DevFind(APIView):
             })
         else:
             query = models.Dev.objects.all()
-            page = request.data.get("page", 1)
-            count = Paginator(query, 5)
-            queryset = count.page(page)
+            page = request.data.get('page', 1)
+            news = Paginator(query, 5)
+            queryset = news.page(page)
             find_result = []
-
             for i in queryset:
                 res = {}
                 s1 = i.devLocation.replace("'", '"')
@@ -182,7 +181,6 @@ class DevFind(APIView):
                 res["devAdmin"] = i.devAdmin
                 res["cTime"] = i.cTime.strftime("%Y/%m/%d %H:%M:%S")
                 res["__v"] = 0
-
                 find_result.append(res)
             if find_result:
                 return Response({
@@ -204,12 +202,9 @@ class DevFindAll(APIView):
 
     def post(self, request):
         query = models.Dev.objects.all()
-        page = request.data.get("page", 1)
-        count = Paginator(query, 5)
-        queryset = count.page(page)
         find_result = []
 
-        for i in queryset:
+        for i in query:
             res = {}
             s1 = i.devLocation.replace("'", '"')
             dev_location = [float(item) for item in json.loads(s1)]

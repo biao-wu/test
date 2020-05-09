@@ -2,16 +2,122 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7718e564-83cd-4782-b56c-a56e255bb8cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/migrations/0006_auto_20200509_1509.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/migrations/0007_auto_20200509_1510.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Water_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Water_demo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/accounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/admin_logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/admin_logs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/0.99300216.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/0.99300216.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/10.e85e28ba.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/10.e85e28ba.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/11.7e28f369.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/11.7e28f369.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/12.63b29d40.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/12.63b29d40.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/13.999f9112.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/13.999f9112.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/14.e213a4c3.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/14.e213a4c3.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/15.19e92469.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/15.19e92469.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/16.5ef4941f.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/16.5ef4941f.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/17.48b9821f.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/17.48b9821f.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/18.0d1adda6.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/18.0d1adda6.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/19.1bd225a3.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/19.1bd225a3.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/2.02e0acdc.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/2.02e0acdc.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/21.a01a6a70.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/21.a01a6a70.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/22.a01a6a70.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/22.a01a6a70.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/23.a01a6a70.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/23.a01a6a70.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/24.af803610.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/24.af803610.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/3.4098c034.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/3.4098c034.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/8.a8f5ef6e.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/8.a8f5ef6e.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/9.c56660e4.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/9.c56660e4.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/main.5ecd60fb.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/css/main.5ecd60fb.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/0.815ad936.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/0.815ad936.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/0.815ad936.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/1.03a06ea0.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/1.03a06ea0.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/10.2348d2f1.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/10.2348d2f1.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/11.612207d9.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/11.612207d9.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/12.356fdbf9.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/12.356fdbf9.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/13.b7bc14dd.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/13.b7bc14dd.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/14.39ef9a7c.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/14.39ef9a7c.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/15.ba2ace4b.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/15.ba2ace4b.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/16.9e1ef0fa.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/16.9e1ef0fa.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/17.a0dc3cc6.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/17.a0dc3cc6.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/18.2430791d.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/18.2430791d.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/19.be5ce78a.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/19.be5ce78a.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/2.c5d33a45.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/2.c5d33a45.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/20.afb0d966.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/20.afb0d966.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/20.afb0d966.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/21.5cb5540e.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/21.5cb5540e.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/22.199d78fe.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/22.199d78fe.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/23.336f3dde.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/23.336f3dde.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/24.5777db3c.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/24.5777db3c.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/25.a35b838f.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/25.a35b838f.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/26.6016cf86.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/26.6016cf86.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/27.fe546ed8.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/27.fe546ed8.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/28.0bd1eaf3.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/28.0bd1eaf3.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/3.90a0e42d.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/3.90a0e42d.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/4.a317d047.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/4.a317d047.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/7.fea49461.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/7.fea49461.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/8.aa55593d.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/8.aa55593d.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/9.9fb14647.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/9.9fb14647.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/main.c0b77f3a.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/main.c0b77f3a.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/runtime-main.757ce344.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/js/runtime-main.757ce344.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/precache-manifest.d3219549789dee16c8b078746c63b8cd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/react/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/view.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/logs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/share.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/share.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/water.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/water.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,32 +163,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/views/water.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/views/dev.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="163" column="13" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,6 +182,7 @@
       <find>timedelta</find>
       <find>aliyun</find>
       <find>PH</find>
+      <find>pri</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,16 +200,13 @@
         <option value="$PROJECT_DIR$/Water_demo/__init__.py" />
         <option value="$PROJECT_DIR$/api/views/auth.py" />
         <option value="$PROJECT_DIR$/api/utils/get_name.py" />
-        <option value="$PROJECT_DIR$/Water_demo/urls.py" />
         <option value="$PROJECT_DIR$/api/view/water.py" />
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/api/view/test.py" />
         <option value="$PROJECT_DIR$/static/js/index_js/cityMap.js" />
-        <option value="$PROJECT_DIR$/templates/test.html" />
         <option value="$PROJECT_DIR$/api/serializers.py" />
         <option value="$PROJECT_DIR$/api/admin.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/api/urls.py" />
         <option value="$PROJECT_DIR$/templates/water_f.html" />
         <option value="$PROJECT_DIR$/static/js/cityMap.js" />
@@ -139,13 +218,16 @@
         <option value="$PROJECT_DIR$/Water_demo/settings.py" />
         <option value="$PROJECT_DIR$/api/views/logs.py" />
         <option value="$PROJECT_DIR$/api/views/share.py" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/Water_demo/urls.py" />
+        <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/api/views/dev.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="199" />
-    <option name="y" value="58" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="329" />
+    <option name="y" value="16" />
     <option name="width" value="1559" />
     <option name="height" value="941" />
   </component>
@@ -155,6 +237,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,22 +250,10 @@
               <item name="Water_demo" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Water_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Water_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Water_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Water_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="Water_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,7 +411,10 @@
       <workItem from="1588227072481" duration="8093000" />
       <workItem from="1588639270270" duration="31943000" />
       <workItem from="1588726256622" duration="29920000" />
-      <workItem from="1588811465254" duration="15713000" />
+      <workItem from="1588811465254" duration="15861000" />
+      <workItem from="1588899618863" duration="9227000" />
+      <workItem from="1588920821834" duration="2916000" />
+      <workItem from="1588985130661" duration="7501000" />
     </task>
     <task id="LOCAL-00001" summary="完善water">
       <created>1588764530800</created>
@@ -349,11 +423,18 @@
       <option name="project" value="LOCAL" />
       <updated>1588764530800</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="前端增加form接口，和大屏对接&#10;修复图片路径问题">
+      <created>1588856994082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588856994082</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433445000" />
+    <option name="totallyTimeSpent" value="453237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,28 +446,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="329" y="16" width="1559" height="941" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49499443" visible="true" weight="0.11567164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49499443" visible="true" weight="0.15010007" />
       <window_info id="Structure" order="1" sideWeight="0.50500554" side_tool="true" weight="0.15938166" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32796487" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3271605" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49213484" visible="true" weight="0.3129176" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49213484" visible="true" weight="0.8122605" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.35150167" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32839507" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32822478" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32962137" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5042644" side_tool="true" weight="0.45768374" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4948148" weight="0.37082404" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4948148" weight="0.37037036" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32064423" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.26666668" />
-      <window_info anchor="bottom" id="manage.py@Water_demo" order="15" sideWeight="0.49573562" weight="0.34632516" />
+      <window_info anchor="bottom" id="manage.py@Water_demo" order="15" sideWeight="0.49573562" weight="0.3461047" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -475,33 +555,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完善water" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善water" />
+    <MESSAGE value="前端增加form接口，和大屏对接&#10;修复图片路径问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端增加form接口，和大屏对接&#10;修复图片路径问题" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/templates/react/service-worker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/templates/react/precache-manifest.d3219549789dee16c8b078746c63b8cd.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/templates/react/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/water_header/src/api/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="135" column="2" lean-forward="true" selection-start-line="135" selection-start-column="2" selection-end-line="135" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrap-3.3.7-dist/js/npm.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/templates/react/robots.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -553,13 +610,6 @@
     <entry file="file://$PROJECT_DIR$/api/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-995">
-          <caret line="83" column="10" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Envs/Water/Lib/site-packages/django/forms/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3758">
@@ -604,16 +654,6 @@
         <state relative-caret-position="-1311" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14805">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -638,23 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1481">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-          <folding>
-            <element signature="e#42#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/catch.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -672,13 +695,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/layui.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="162" column="1" lean-forward="true" selection-start-line="162" selection-start-column="1" selection-end-line="183" selection-end-column="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/cityMap.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -721,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/views/admin_logs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -748,13 +757,6 @@
     <entry file="file://$PROJECT_DIR$/api/media/img/xiaoxin.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/views/logs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="96" column="24" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/views/share.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-570">
@@ -765,16 +767,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-221256081/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="4947" column="8" selection-start-line="4947" selection-start-column="8" selection-end-line="4947" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="83" column="10" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/test-img-2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/online.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1809">
+          <caret line="183" column="7" lean-forward="true" selection-start-line="183" selection-start-column="7" selection-end-line="183" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/views/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="147" column="41" lean-forward="true" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Water_demo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+        <state relative-caret-position="175">
+          <caret line="139" column="6" lean-forward="true" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1243">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Water_demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#644#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1520">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/views/water.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="308">
           <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -782,13 +870,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/views/dev.py">
+    <entry file="file://$PROJECT_DIR$/api/views/logs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="163" column="13" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-258">
+          <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="41" />
         </state>
       </provider>
     </entry>

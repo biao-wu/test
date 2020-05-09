@@ -27,7 +27,7 @@ class Dev(models.Model):
     devDate = models.DateTimeField(max_length=32, verbose_name="设备日期")
     devSIM = models.CharField(max_length=100, verbose_name="SIM卡号")
     devUse = models.BooleanField(verbose_name="是否正在使用")
-    devLocation = models.CharField(max_length=100, verbose_name="位置")
+    devLocation = models.CharField(max_length=200, verbose_name="位置")
     devAdmin = models.CharField(max_length=32, null=True, blank=True, verbose_name="维护人员")
     cTime = models.DateTimeField(max_length=100, null=True, blank=True, verbose_name="创建时间")
 
@@ -64,7 +64,7 @@ class OperationLogs(models.Model):
     管理员操作日志
     """
     admin = models.CharField(max_length=64, verbose_name="管理员")
-    opa = models.CharField(max_length=100, null=True, verbose_name="操作记录")
+    opa = models.CharField(max_length=200, null=True, verbose_name="操作记录")
     cTime = models.DateTimeField(max_length=100, blank=True, null=True, verbose_name="操作时间")
 
     class Meta:
