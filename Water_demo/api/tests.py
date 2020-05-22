@@ -203,4 +203,48 @@ var option = {
             }
         ]
     };
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
 '''
+import datetime
+
+l1 = [{'id': 1, 'siteName': '西乡站点', 'api_waterdata.id': 11, 'pH': '4.8', 'NTU': '0.61', 'oxygen': '7.3', 'tem': '38.8',
+       'ele': '479', 'chlorine': '6.8', 'site_id': 1, 'time': datetime.datetime(2020, 5, 5, 14, 0), 'status': 1},
+      {'id': 2, 'siteName': '龙华站点', 'api_waterdata.id': 12, 'pH': '5.9', 'NTU': '0.77', 'oxygen': '9.7', 'tem': '35.9',
+       'ele': '593', 'chlorine': '8.3', 'site_id': 2, 'time': datetime.datetime(2020, 5, 5, 14, 0), 'status': 1},
+      {'id': 3, 'siteName': '清湖站点', 'api_waterdata.id': 13, 'pH': '7.1', 'NTU': '0.79', 'oxygen': '7.2', 'tem': '36.7',
+       'ele': '700', 'chlorine': '6.2', 'site_id': 3, 'time': datetime.datetime(2020, 5, 7, 9, 00),
+       'status': 0}]
+result = []
+
+for i in l1:
+    res = {}
+    res["create_time"] = i.get("time")
+    res["ph_data"] = str(format(float(i.get('pH')) / 7 * 100, '.1f')) + "%"
+    res["chlorine_data"] = str(float(i.get('chlorine')) / 10 * 100) + "%"
+    res["NTU_data"] = str(float(i.get('NTU')) / 1 * 100) + "%"
+    res["site_id"] = i.get("site_id")
+    result.append(res)
+print(result)
+
+
+    # print(format(float(i.get('pH')) / 7 * 100,'.2f'))
+# x = 68.57142857142857
+# print(format(x,'.2f'))
+
+

@@ -145,13 +145,13 @@
 
 .section .left .station-box {
   position: relative;
-  /* width: 250px; */
+   /*width: 250px;*/
   width: 80%;
   /* height: 110px; */
   height: auto;
   text-align: right;
   box-sizing: border-box;
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .section .left .station-box .bg-img {
@@ -177,20 +177,23 @@
 }
 
 .section .left .online {
+  margin-left: -120px;
   background: url(../images/online.png) no-repeat center;
-  background-size: 100% 100%;
+  background-size: 25% 50%;
   color: #00e5ff;
 }
 
 .section .left .outline {
-  background: url(../images/outline.png) no-repeat center;
-  background-size: 100% 100%;
+  margin-left: -120px;
+  background: url(../images/offline.png) no-repeat center;
+  background-size: 25% 50%;
   color: #cccccc;
 }
 
 .section .left .catch {
+  margin-left: -120px;
   background: url(../images/catch.png) no-repeat center;
-  background-size: 100% 100%;
+  background-size: 25% 50%;
   color: #f24a2f;
 }
 
@@ -201,7 +204,7 @@
 }
 
 .section .left .number-title {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .section .left .station-all-text {
@@ -214,7 +217,7 @@
 /* 地图 */
 .section .left .map-box {
   width: 98%;
-  height: 1100px;
+  height: 1822px;
   margin: 0 auto;
   border: 1px solid #ccc;
 }
@@ -353,7 +356,7 @@
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background: url(../images//more.png) no-repeat center;
+  background: url(../images/more.png) no-repeat center;
   background-size: 100% 100%;
   cursor: pointer;
 }
@@ -487,20 +490,20 @@
 .map-tip-box .title-box {
   width: 100%;
   display: table;
-  font-size: 24px;
+  font-size: 18px;
   word-spacing: -1em;
   padding: 15px 0;
 }
 
 .map-tip-box .title-box .item {
-  width: 33.33%;
+  width: 49.33%;
   display: inline-block;
   text-align: center;
 }
 .map-tip-box .time-box {
-  padding: 12px 0;
+  padding: 33px 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .map-tip-box .time-box .item {
@@ -514,7 +517,7 @@
 
 .map-tip-box .btn-box {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #01223a;
 }
 

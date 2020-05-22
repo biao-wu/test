@@ -57,6 +57,8 @@ urlpatterns = [
                   # 测试接口
                   url(r'^test$', test.Test.as_view(), name='test'),
                   # 大屏图表展示ajax
-                  url(r'^echarts$', water.echarts_data, name='echarts'),
+                  url(r'^echarts/$', water.echarts_data, name='echarts'),
+                  # 地图数据展示
+                  url(r'^map/$', water.map_data, name='map'),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

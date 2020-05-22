@@ -30,6 +30,7 @@ class Dev(models.Model):
     devLocation = models.CharField(max_length=200, verbose_name="位置")
     devAdmin = models.CharField(max_length=32, null=True, blank=True, verbose_name="维护人员")
     cTime = models.DateTimeField(max_length=100, null=True, blank=True, verbose_name="创建时间")
+    site = models.ForeignKey(to='Site', default=1, verbose_name="站点信息", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "设备"
@@ -98,7 +99,15 @@ class Site(models.Model):
     """
     站点信息
     """
+    site_status = (
+        (1, "正常"),
+        (2, "异常"),
+        (0, "离线")
+    )
     siteName = models.CharField(max_length=32, verbose_name="站点名称")
+    siteLocation = models.CharField(max_length=200, null=True, blank=True, verbose_name="位置")
+    user = models.ForeignKey(to='UserInfo', null=True, blank=True, verbose_name="管理员", on_delete=models.CASCADE)
+    status = models.IntegerField(choices=site_status, default=1, verbose_name="站点状态")
 
     class Meta:
         verbose_name = "站点信息"
@@ -109,11 +118,6 @@ class WaterData(models.Model):
     """
     各站点的水务数据
     """
-    site_status = (
-        (1, "正常"),
-        (2, "异常"),
-        (0, "离线")
-    )
 
     pH = models.CharField(max_length=32, verbose_name="PH")
     NTU = models.CharField(max_length=32, verbose_name="浑浊度")
@@ -121,10 +125,25 @@ class WaterData(models.Model):
     tem = models.CharField(max_length=32, verbose_name="水温")
     ele = models.CharField(max_length=32, verbose_name="电导率")
     chlorine = models.CharField(max_length=32, verbose_name="余氯")
-    status = models.IntegerField(choices=site_status, default=1, verbose_name="站点状态")
+
     time = models.DateTimeField(max_length=100, blank=True, null=True, verbose_name="上报日期")
     site = models.ForeignKey(to='Site', verbose_name="站点信息", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "水务数据信息"
+        verbose_name_plural = verbose_name
+
+
+class DataSite(models.Model):
+    """
+    统计表
+    """
+    pH = models.CharField(max_length=32, verbose_name="PH合格率")
+    NTU = models.CharField(max_length=32, verbose_name="浊度合格率")
+    chlorine = models.CharField(max_length=32, verbose_name="余氯合格率")
+    time = models.DateTimeField(max_length=100, blank=True, null=True, verbose_name="上报日期")
+    site = models.ForeignKey(to='Site', verbose_name="站点信息", on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = "水务数据统计"
         verbose_name_plural = verbose_name

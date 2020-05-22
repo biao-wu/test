@@ -1,9 +1,20 @@
 from django.core.paginator import Paginator
-
+from api.page import PageNation
+from rest_framework.pagination import PageNumberPagination
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from api.utils.pager import PagerSerializer
 
 from api import models
+
+
+class MyPageNumberPagination(PageNumberPagination):
+    # 默认每页显示多少个
+    page_size = 5
+    # 每页显示多少个，参数为count
+    page_size_query_param = 'count'
+    # 每页最多显示10个
+    max_page_size = 10
 
 
 class GetLogs(APIView):
@@ -11,16 +22,19 @@ class GetLogs(APIView):
     获取单个管理员登录日志
     """
 
-    def get(self, request):
+    def get(self, request, *args, **kwargs):
         name = request.GET.get("name")
-        page = request.GET.get("page", 1)
+        # 从数据库获取数据
         log_query = models.Log.objects.filter(username=name)
-        news = Paginator(log_query, 10)
-        queryset = news.page(page)
+        try:
+            log_query = log_query.order_by('-pk')
+        except Exception:
+            pass
+
         # 判断该用户之前是否有日志记录
-        if queryset:
+        if log_query:
             data = []
-            for i in queryset:
+            for i in log_query:
                 last_login_ip = i.lastLoginIp
                 last_login_time = i.lastLoginTime.strftime("%Y/%m/%d %H:%M:%S")
                 now_login_time = i.nowLoginTime.strftime("%Y/%m/%d %H:%M:%S")
@@ -65,7 +79,12 @@ class GetLogsAll(APIView):
         page = request.GET.get("page", 1)
         logs = models.Log.objects.all()
         news = Paginator(logs, 10)
+
         queryset = news.page(page)
+        try:
+            queryset = queryset.order_by('-pk')[page.start_num:page.end_num]
+        except Exception:
+            pass
         data = []
         for i in queryset:
             name = i.username

@@ -24,7 +24,7 @@ SECRET_KEY = 'j!%+w%wl3bg_4rt6)dfe-%w*3#67u4q)vx#iw6e8e11q$9e8#1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -37,11 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'rest_framework',
-    # 'corsheaders',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
-    # 'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'Water_demo.urls'
 # PASSWORD_HASHERS = "pbkdf2_sha256"
@@ -102,7 +102,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default']['OPTIONS']['init_command'] = "SET sql_mode='STRICT_TRANS_TABLES'"  # 排除错误
+# DATABASES['default']['OPTIONS']['init_command'] = "SET sql_mode='STRICT_TRANS_TABLES'"  # 排除错误
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
@@ -139,11 +139,9 @@ USE_TZ = True
 
 # 静态文件
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static").replace('\\', '/')
+    os.path.join(BASE_DIR, 'static').replace('\\', '/')
 ]
-
 # STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
 MEDIA_URL = '/media/'
@@ -152,5 +150,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'api/media').replace('\\', '/')  # media即�
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "api.extensions.auth.JwtQueryParamsAuthentication",
-    ]
+    ],
 }
